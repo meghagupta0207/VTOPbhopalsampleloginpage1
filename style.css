@@ -23,13 +23,10 @@ body {
 }
 
 .main-heading .heading {
-    background: radial-gradient(circle, white, black);
     font-size: 50px;
     margin-bottom: 30px;
     padding: 10px;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color:white;
     text-shadow: none;
 }
 
