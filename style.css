@@ -48,16 +48,36 @@ body {
 }
 
 /* ---- Logo Styling ---- */
+@keyframes logo-backlit {
+    0% {
+        box-shadow: 0 10px 10px 6px rgba(0, 0, 0, 0.8), 0 0 5px 8px rgb(0, 191, 255), 0 0 10px 5px whitesmoke;
+    }
+    25% {
+        box-shadow: 10px 10px 15px 6px rgba(0, 0, 0, 0.8), 0 0 6px 8px rgb(0, 191, 255), 0 0 10px 5px whitesmoke;
+    }
+    50% {
+        box-shadow: 10px 0 15px 6px rgba(0, 0, 0, 0.8), 0 0 8px 8px aqua;
+    }
+    75% {
+        box-shadow: 5px -10px 15px 6px rgba(0, 0, 0, 0.8), 0 0 6px 8px rgb(0, 191, 255), 0 0 10px 5px whitesmoke;
+    }
+    100% {
+        box-shadow: 0 -10px 10px 6px rgba(0, 0, 0, 0.8), 0 0 5px 8px rgb(0, 191, 255), 0 0 10px 5px whitesmoke;
+    }
+}
+
+/* Update the logo class to use the animation properly */
 .logo {
     height: 280px;
     width: 280px;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(118, 117, 117, 0.8) 0%, rgba(128, 128, 128, 0.6) 20%, rgba(0, 0, 0, 1) 100%);
-    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.8), 0 0 5px 8px rgb(	0, 191, 255),0 0 10px 5px whitesmoke;
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.8), 0 0 5px 8px rgb(0, 191, 255), 0 0 10px 5px whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    animation: logo-backlit 4s infinite alternate ease-in-out;
 }
 
 .logo img {
