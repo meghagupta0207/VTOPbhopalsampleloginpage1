@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+    background-image: url(./images/abstract-textured-backgound_1258-30461.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ---- Header Section ---- */
+.main-heading {
+    color: white;
+    text-align: center;
+    margin: 0px 0 60px;
+    padding: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.main-heading .heading {
+    background: radial-gradient(circle, white, black);
+    font-size: 50px;
+    margin-bottom: 30px;
+    padding: 10px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+.main-heading .description {
+    font-size: 17px;
+    margin-top: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---- Login Body ---- */
+.login-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* ---- Logo Styling ---- */
+.logo {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(118, 117, 117, 0.8) 0%, rgba(128, 128, 128, 0.6) 20%, rgba(0, 0, 0, 1) 100%);
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.8), 0 0 5px 8px rgb(	0, 191, 255),0 0 10px 5px whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 210px;
+    width: 210px;
+    object-fit: contain;
+}
+
+.logo-below-body {
+    margin: 0;
+}
+
+.logo-below {
+    height: 100px;
+    width: 200px;
+    margin: 20px 0;
+}
+
+/* ---- Login Options ---- */
+.login-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.student-button, .teacher-button, .alumni-button, .parent-button {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(118, 117, 117, 0.8) 0%, rgba(128, 128, 128, 0.6) 20%, rgba(0, 0, 0, 1) 100%);
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.8), 0 0 5px 8px rgb(	0, 191, 255);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-button:hover, .teacher-button:hover, .alumni-button:hover, .parent-button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.8), 0 0 8px 8px aqua;
+}
+
+.login-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.login-card img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
+
+.login-card p {
+    color: white;
+    font-weight: bold;
+    margin-top: 160px;
+    position: relative;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+/* ---- Footer ---- */
+footer {
+    color: white;
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+/* ---- Responsive Design ---- */
+@media (max-width: 650px) 
+{
+    .main-heading .heading {
+        font-size: 40px;
+    }
+
+    .main-heading .description {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .logo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .logo img {
+        height: 160px;
+        width: 160px;
+    }
+
+    .logo-below {
+        height: 80px;
+        width: 150px;
+    }
+
+    .login-options {
+        gap: 80px;
+    }
+
+    .student-button, .teacher-button, .alumni-button, .parent-button {
+        height: 100px;
+        width: 100px;
+    }
+
+    .login-card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .login-card p {
+        margin-top: 120px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main-heading .heading {
+        font-size: 40px;
+    }
+
+    .main-heading .description {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .logo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .logo img {
+        height: 160px;
+        width: 160px;
+    }
+
+    .logo-below {
+        height: 80px;
+        width: 150px;
+    }
+
+    .login-options {
+        gap: 80px;
+    }
+
+    .student-button, .teacher-button, .alumni-button, .parent-button {
+        height: 100px;
+        width: 100px;
+    }
+
+
+
+    .login-card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .login-card p {
+        margin-top: 120px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-options {
+        gap: 60px;
+    }
+}
